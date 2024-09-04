@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산책로</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+    <style>
+        *{margin:0; padding: 0 ;box-sizing: border-box;}
+        #layout{max-width: 600px;height: 100vh;  border:3px solid black; margin: auto;position: relative;}
+         #layout main img{ max-width: 100%; margin-left: 25%;transform: translateY(5px); margin: auto;}
+         
+         .material-symbols-outlined {border: none; background: none;font-size: 2rem;}
+         header{display: flex;   border-bottom:  3px solid black;justify-content: space-between;position: relative;}
+         
+         #menu{text-decoration: none; color: black;  }
+         header div{flex: 0.5;}
+         header h2{flex: 1;}
+         #nav{position: absolute;width: 100%;height: 90vh;background: white;line-height: 500%;list-style: none;padding-top: 50px;padding-left:30% ;height: 0;overflow: hidden;transition: height 0.5s;z-index: 1;}
+        #nav a{text-decoration: none;font-size: 2rem; color: black;}
+         main{ padding: 40px; }
+         footer{ padding-left: 7%;margin-top: -30px;}
+        
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        
+        <header>
+            <div></div>
+            <button type="button" class="material-symbols-outlined">pin_drop</button> 
+            <h2>오늘의TOP 산책로 </h2>
+            <a href="#" class="material-symbols-outlined" id="menu">menu</a>
+        
+        </header>
+        <ol id="nav">
+            <li><a href="road.html">-산책로</a></li>
+            <li><a href="animal.html">-동물병원</a></li>
+            <li><a href="food.html">-애견사료</a></li>
+            <li><a href="goods.html">-애견용품</a></li>
+            <li><a href="hair.html">-애견미용</a></li>
+          </ol>
+        <main>
+            <img src="images/petroad.jpg" alt="산책로">
+        </main>
+        <footer>
+            <button type="button" class="material-symbols-outlined">favorite</button> 
+            <button type="button" class="material-symbols-outlined">chat</button> 
+        </footer>   
+    </div>
+  
+</body>
+</html>
